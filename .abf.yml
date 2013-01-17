@@ -1,4 +1,4 @@
 sources:
-  "mwe.doc.tar.xz:"	25d0dcdd8d9f7f206844538dea9d7f1bb21debb8
-  "mwe.source.tar.xz:"	8754f60586d5564b4db4c0821b43c51c69ff4853
-  "mwe.tar.xz:"	343a002008b88601ee431a156dab85950462341b
+  mwe.doc.tar.xz: 25d0dcdd8d9f7f206844538dea9d7f1bb21debb8
+  mwe.source.tar.xz: 8754f60586d5564b4db4c0821b43c51c69ff4853
+  mwe.tar.xz: 343a002008b88601ee431a156dab85950462341b
