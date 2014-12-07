@@ -6,7 +6,7 @@
 # catalog-version 0.3
 Name:		texlive-mwe
 Version:	0.3
-Release:	8
+Release:	9
 Summary:	Packages and image files for MWEs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mwe
