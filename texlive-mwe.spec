@@ -1,5 +1,5 @@
 Name:		texlive-mwe
-Version:	0.4
+Version:	0.5
 Release:	1
 Summary:	Packages and image files for MWEs
 Group:		Publishing
