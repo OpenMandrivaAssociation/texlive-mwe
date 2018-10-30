@@ -1,6 +1,6 @@
 Name:		texlive-mwe
 Version:	0.5
-Release:	2
+Release:	3
 Summary:	Packages and image files for MWEs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mwe
