@@ -1,13 +1,13 @@
 Name:		texlive-mwe
-Version:	0.5
-Release:	3
+Version:	64967
+Release:	1
 Summary:	Packages and image files for MWEs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mwe
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mwe.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mwe.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mwe.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mwe.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mwe.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mwe.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +24,12 @@ commands, without the need to share image files or to use
 replacement code.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -40,7 +40,8 @@ replacement code.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
